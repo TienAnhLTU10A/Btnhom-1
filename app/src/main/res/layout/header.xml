@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_bg_profile"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_bg" />
+
+
+    <ImageView
+        android:id="@+id/icon_phone_white"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="30dp"
+        android:background="@color/colortransparent"
+        android:src="@drawable/icon_phone_white" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/viewavatar"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/avatar"
+        app:civ_border_color="@color/colorwhitetext"
+        app:civ_border_width="2dp" />
+
+    <ImageView
+        android:id="@+id/icon_mail_white"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@color/colortransparent"
+        android:src="@drawable/icon_mail_white"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewavatar"
+        android:layout_marginTop="10dp"
+        android:text="Ten"
+        android:textAlignment="center"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/tvMota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUserName"
+        android:layout_marginTop="10dp"
+        android:text="Mota"
+        android:textAlignment="center"
+        android:textColor="@color/pink"
+        android:textSize="25dp" />
+
+</RelativeLayout>
